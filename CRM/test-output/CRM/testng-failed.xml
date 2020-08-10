@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CRM]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginFunctionalityCheck(failed)">
+    <parameter name="password" value="rabia123"/>
+    <parameter name="url" value="https://ui.freecrm.com/"/>
+    <parameter name="email" value="rabia.saini@gmail.com"/>
+    <classes>
+      <class name="CRMloginTest.Login">
+        <methods>
+          <include name="login4"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- CRMloginTest.Login -->
+    </classes>
+  </test> <!-- LoginFunctionalityCheck(failed) -->
+</suite> <!-- Failed suite [CRM] -->

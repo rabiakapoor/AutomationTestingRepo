@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRM" guice-stage="DEVELOPMENT">
+	<test thread-count="5" name="LoginFunctionalityCheck" verbose="2">
+		<parameter name="url" value="https://ui.freecrm.com/"></parameter>
+		<parameter name="email" value="seleniumscripts.automation@gmail.com"></parameter>
+		<parameter name="password" value="Automation123"></parameter>
+		<classes>
+			<class name="CRMloginTest.Login" />
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
